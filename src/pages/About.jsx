@@ -8,57 +8,61 @@ export default function About() {
       title: 'MY JOURNEY',
       content: [
         {
-          year: '2020',
-          role: 'Started Development',
-          description: 'Began my journey into web development, learning HTML, CSS, and JavaScript fundamentals.',
-        },
-        {
-          year: '2021',
-          role: 'React Specialist',
-          description: 'Mastered React ecosystem and started building complex single-page applications.',
-        },
-        {
           year: '2023',
-          role: 'Full-Stack Developer',
-          description: 'Expanded into backend technologies and became proficient in Node.js and databases.',
+          role: 'Backend Development Foundations',
+          description:
+            'Started my software development journey by focusing on backend fundamentals, learning JavaScript, Node.js, Express, and basic database concepts with MongoDB.',
+        },
+        {
+          year: '2024',
+          role: 'Computer Science Student & Backend-Focused MERN Developer',
+          description:
+            'Began my computer science studies while deepening my backend expertise, building REST APIs, authentication systems, and working with databases, JWT, and server-side logic.',
         },
         {
           year: '2025',
-          role: 'Creative Technologist',
-          description: 'Now focusing on creating unique digital experiences that blend design and code.',
+          role: 'MERN Stack Developer (Backend-Oriented)',
+          description:
+            'Currently building full-stack MERN applications with a strong focus on backend architecture, security, scalability, and real-world system design.',
         },
       ],
     },
+
     philosophy: {
       title: 'PHILOSOPHY',
       content: [
         {
-          principle: 'User-Centric',
-          description: 'Every line of code should serve the end user. Beautiful interfaces mean nothing without functionality.',
+          principle: 'Problem Solving',
+          description:
+            'I approach development as a problem-solving process, focusing on clarity, structure, and long-term maintainability.',
         },
         {
-          principle: 'Performance First',
-          description: 'Optimized, fast-loading experiences are non-negotiable. Speed is a feature.',
+          principle: 'Security & Performance',
+          description:
+            'Security, performance, and scalability are core concerns. A system should be safe, fast, and reliable by design.',
         },
         {
           principle: 'Continuous Learning',
-          description: 'Technology evolves rapidly. Staying curious and adaptive is the only way forward.',
+          description:
+            'As a computer science student, I constantly improve my understanding of algorithms, system design, and modern web technologies.',
         },
         {
-          principle: 'Attention to Detail',
-          description: 'Perfection lies in the details. Micro-interactions and polish separate good from great.',
+          principle: 'Clean Code',
+          description:
+            'Readable, well-structured code matters. Clean code makes applications easier to scale, debug, and maintain.',
         },
       ],
     },
+
     interests: {
       title: 'INTERESTS',
       content: [
-        { name: 'Generative Art', icon: '◆' },
-        { name: 'Creative Coding', icon: '▲' },
-        { name: 'UI Animation', icon: '●' },
-        { name: 'WebGL & 3D', icon: '■' },
-        { name: 'Design Systems', icon: '◇' },
-        { name: 'Open Source', icon: '▼' },
+        { name: 'Full-Stack Development', icon: '◆' },
+        { name: 'Backend Architecture', icon: '▲' },
+        { name: 'Authentication & Security', icon: '●' },
+        { name: 'System Design', icon: '■' },
+        { name: 'Databases & APIs', icon: '◇' },
+        { name: 'Open Source & Learning', icon: '▼' },
       ],
     },
   };
@@ -77,17 +81,19 @@ export default function About() {
         <div className="about-intro">
           <div className="intro-text">
             <h3 className="intro-heading">
-              I'm a developer who believes code is a creative medium.
+              I'm a MERN stack developer and computer science student.
             </h3>
+
             <p className="intro-paragraph">
-              With over 5 years of experience crafting digital experiences, I specialize
-              in building interfaces that are not just functional, but memorable. My work
-              sits at the intersection of design, technology, and user experience.
+              I’m a computer science student with over 3 years of hands-on experience
+              building full-stack web applications using the MERN stack (MongoDB,
+              Express, React, and Node.js).
             </p>
+
             <p className="intro-paragraph">
-              I'm passionate about pushing the boundaries of what's possible on the web,
-              experimenting with new technologies, and creating experiences that users
-              actually enjoy interacting with.
+              I focus on writing clean, maintainable code and building secure,
+              scalable systems such as authentication workflows, REST APIs,
+              dashboards, and real-world web products.
             </p>
           </div>
 
@@ -106,7 +112,7 @@ export default function About() {
                   <circle cx="100" cy="100" r="40" fill="url(#grad1)" />
                 </svg>
               </div>
-              <div className="image-label">YOUR_PHOTO.JPG</div>
+              <div className="image-label">ALGERIA • MERN STACK</div>
             </div>
           </div>
         </div>

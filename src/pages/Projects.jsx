@@ -1,64 +1,184 @@
 import React, { useState } from 'react';
+import ProjectModal from '../Components/ProjectModal';
 
 export default function Projects() {
   const [hoveredProject, setHoveredProject] = useState(null);
+  const [selectedProject, setSelectedProject] = useState(null);
 
   const projects = [
-    {
-      id: 1,
-      title: 'E-Commerce Platform',
-      category: 'WEB APP',
-      description: 'Full-stack e-commerce solution with real-time inventory and payment integration.',
-      tech: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      year: '2024',
-      image: 'gradient-1',
-    },
-    {
-      id: 2,
-      title: 'AI Dashboard',
-      category: 'SAAS',
-      description: 'Analytics dashboard for AI model performance tracking and visualization.',
-      tech: ['Next.js', 'TypeScript', 'D3.js', 'Python'],
-      year: '2024',
-      image: 'gradient-2',
-    },
-    {
-      id: 3,
-      title: 'Creative Portfolio',
-      category: 'WEBSITE',
-      description: 'Award-winning portfolio site for a digital artist with WebGL effects.',
-      tech: ['React', 'Three.js', 'GSAP', 'Tailwind'],
-      year: '2023',
-      image: 'gradient-3',
-    },
-    {
-      id: 4,
-      title: 'Task Management',
-      category: 'MOBILE APP',
-      description: 'Cross-platform task manager with real-time collaboration features.',
-      tech: ['React Native', 'Firebase', 'Redux', 'Expo'],
-      year: '2023',
-      image: 'gradient-4',
-    },
-    {
-      id: 5,
-      title: 'Design System',
-      category: 'LIBRARY',
-      description: 'Component library and design system for a fintech startup.',
-      tech: ['React', 'Storybook', 'CSS Modules', 'Figma'],
-      year: '2024',
-      image: 'gradient-5',
-    },
-    {
-      id: 6,
-      title: 'Music Visualizer',
-      category: 'EXPERIMENT',
-      description: 'Real-time audio visualization using Web Audio API and Canvas.',
-      tech: ['JavaScript', 'Canvas', 'Web Audio', 'GLSL'],
-      year: '2023',
-      image: 'gradient-6',
-    },
-  ];
+  {
+    id: 1,
+    title: 'E-Commerce Platform',
+    category: 'FULL-STACK MERN',
+    type: 'Web Application',
+    status: 'Production-Ready',
+    year: '2024',
+    cover: 'gradient-1',
+    images: [
+      '/projects/ecommerce/dashboard.png',
+      '/projects/ecommerce/orders.png',
+      '/projects/ecommerce/product.png',
+      '/projects/ecommerce/auth.png',
+    ],
+    shortDescription:
+      'Full-featured e-commerce platform with secure authentication, payments, and an advanced admin dashboard.',
+    overview: [
+      'Secure authentication and role-based authorization',
+      'Shopping cart, checkout flow, and PayPal payment integration',
+      'Lightweight multi-language (i18n) support',
+      'Admin dashboard with charts, sales statistics, and order management',
+      'User management, reviews, comments, and reply system',
+      'Product image handling and fully responsive UI',
+    ],
+    architecture: [
+      'JWT-based authentication and protected routes',
+      'RESTful API with clean separation of concerns',
+      'Server-side validation and sanitized inputs',
+      'Optimized database queries for scalability',
+    ],
+    tech: [
+      'React',
+      'Node.js',
+      'Express',
+      'MongoDB',
+      'JWT',
+      'PayPal API',
+      'Chart.js',
+    ],
+  },
+
+  {
+    id: 2,
+    title: 'High-Performance Task Manager',
+    category: 'BACKEND / SYSTEMS',
+    type: 'Backend Project',
+    status: 'Academic – First Place',
+    year: '2024',
+    cover: 'gradient-2',
+    images: [
+      '/projects/task-manager/architecture.png',
+      '/projects/task-manager/flow.png',
+      '/projects/task-manager/benchmark.png',
+    ],
+    shortDescription:
+      'Backend-focused task manager optimized for performance using low-level system concepts.',
+    overview: [
+      'Backend built with Node.js and C++ for performance-critical operations',
+      'Applied core data structures: Queue, Stack, and Linked List',
+      'Optimized task execution flow and memory usage',
+      'College duo project that achieved first place',
+    ],
+    architecture: [
+      'Hybrid architecture combining high-level and low-level logic',
+      'Efficient memory handling and execution control',
+      'Clear separation between system logic and API layer',
+    ],
+    tech: ['Node.js', 'C++', 'Data Structures', 'REST API'],
+  },
+
+  {
+    id: 3,
+    title: 'AI Model Landing Page',
+    category: 'FRONTEND',
+    type: 'Landing Page',
+    status: 'Completed',
+    year: '2023',
+    cover: 'gradient-3',
+    images: [
+      '/projects/ai-landing/hero.png',
+      '/projects/ai-landing/sections.png',
+      '/projects/ai-landing/darkmode.png',
+    ],
+    shortDescription:
+      'Modern landing page designed for an AI / neural network product.',
+    overview: [
+      'Clean and modern UI built with React',
+      'Smooth animations and transitions',
+      'Dark mode toggle support',
+      'Focused on performance, clarity, and visual hierarchy',
+    ],
+    architecture: [
+      'Component-based UI architecture',
+      'Animation-driven UX without heavy libraries',
+    ],
+    tech: ['React', 'CSS Animations', 'Dark Mode'],
+  },
+
+  {
+    id: 4,
+    title: 'Portfolio v1 (NASA Theme)',
+    category: 'FRONTEND',
+    type: 'Personal Portfolio',
+    status: 'Archived',
+    year: '2023',
+    cover: 'gradient-4',
+    images: [
+      '/projects/portfolio-v1/home.png',
+      '/projects/portfolio-v1/about.png',
+      '/projects/portfolio-v1/projects.png',
+    ],
+    shortDescription:
+      'First version of my personal portfolio with a NASA-inspired theme.',
+    overview: [
+      'Frontend-only personal portfolio',
+      'NASA-inspired dark visual design',
+      'Strong focus on layout, visuals, and creative styling',
+    ],
+    architecture: [
+      'Static frontend architecture',
+      'Theme-driven UI experimentation',
+    ],
+    tech: ['HTML', 'CSS', 'JavaScript'],
+  },
+
+  {
+    id: 5,
+    title: 'Enterprise-Grade Authentication System',
+    category: 'SECURITY / BACKEND',
+    type: 'Security System',
+    status: 'Production-Grade',
+    year: '2025',
+    cover: 'gradient-5',
+    images: [
+      '/projects/auth-system/flow.png',
+      '/projects/auth-system/2fa.png',
+      '/projects/auth-system/security.png',
+      '/projects/auth-system/tokens.png',
+    ],
+    shortDescription:
+      'Highly secure authentication and authorization system designed with security-first principles.',
+    overview: [
+      'JWT access & refresh token rotation',
+      'Two-factor authentication with backup codes',
+      'Email recovery and secure password reset flows',
+      'Rate limiting and abuse prevention using Redis',
+      'Hashed OTPs and token blacklisting',
+      'CSRF protection and XSS / NoSQL injection sanitization',
+      'Secure cookies and hardened HTTP security headers',
+      'Google OAuth integration',
+      'Session invalidation and forced logout mechanisms',
+      'Built with TypeScript and clean layered architecture',
+    ],
+    architecture: [
+      'Security-first backend architecture',
+      'Token lifecycle management and session control',
+      'Strict validation schemas and sanitized inputs',
+      'Scalable and maintainable TypeScript codebase',
+    ],
+    tech: [
+      'Node.js',
+      'TypeScript',
+      'Express',
+      'MongoDB',
+      'Redis',
+      'JWT',
+      'OAuth',
+      'Security Headers',
+    ],
+  },
+];
+
+
 
   return (
     <section id="projects" className="projects-section">
@@ -103,7 +223,10 @@ export default function Projects() {
               </div>
 
               <div className="project-footer">
-                <button className="project-link">
+                <button 
+                    className="project-link"
+                    onClick={() => setSelectedProject(project)}
+                >
                   <span>VIEW DETAILS</span>
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                     <path
@@ -131,6 +254,50 @@ export default function Projects() {
           </button>
         </div>
       </div>
+
+      <ProjectModal
+        project={selectedProject}
+        onClose={() => setSelectedProject(null)}
+      />
+
     </section>
   );
 }
+
+// function ProjectModal({ project, onClose }) {
+//   if (!project) return null;
+
+//   return (
+//     <div className="project-modal-backdrop" onClick={onClose}>
+//       <div
+//         className="project-modal"
+//         onClick={(e) => e.stopPropagation()}
+//       >
+//         <div className="modal-header">
+//           <h3 className="modal-title">{project.title}</h3>
+//           <button className="modal-close" onClick={onClose}>✕</button>
+//         </div>
+
+//         <p className="modal-description">{project.shortDescription}</p>
+
+//         <div className="modal-section">
+//           <h4 className="modal-subtitle">Project Overview</h4>
+//           <ul className="modal-list">
+//             {project.overview.map((item, i) => (
+//               <li key={i}>{item}</li>
+//             ))}
+//           </ul>
+//         </div>
+
+//         <div className="modal-section">
+//           <h4 className="modal-subtitle">Tech Stack</h4>
+//           <div className="modal-tech">
+//             {project.tech.map((t, i) => (
+//               <span key={i} className="tech-tag">{t}</span>
+//             ))}
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }

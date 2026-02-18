@@ -41,7 +41,7 @@ export default function Navigation({ activeSection, setActiveSection }) {
       <div className="nav-container">
         <div className="nav-brand">
           <div className="brand-text">
-            <span className="brand-name">NEURAL</span>
+            <span className="brand-name">ALI</span>
             <span className="brand-separator">/</span>
             <span className="brand-role">DEVELOPER</span>
           </div>

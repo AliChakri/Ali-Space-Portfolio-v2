@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import NeuralBackground from './components/NeuralBackground';
+import Neuralbackground from './Components/Neuralbackground';
 import Hero from './pages/Hero';
 import About from './pages/About';
 import Projects from './pages/Projects';
@@ -12,7 +12,7 @@ export default function App() {
 
   return (
     <div className="portfolio-container">
-      <NeuralBackground 
+      <Neuralbackground 
         color="#00ff88"
         trailOpacity={0.12}
         particleCount={800}

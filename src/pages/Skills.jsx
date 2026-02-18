@@ -4,44 +4,50 @@ export default function Skills() {
   const [activeCategory, setActiveCategory] = useState('frontend');
 
   const skillCategories = {
-    frontend: {
-      title: 'FRONTEND',
-      skills: [
-        { name: 'React / Next.js', level: 95, icon: '⚛' },
-        { name: 'TypeScript', level: 90, icon: '◆' },
-        { name: 'Tailwind CSS', level: 95, icon: '▲' },
-        { name: 'GSAP / Framer Motion', level: 85, icon: '●' },
-        { name: 'Three.js / WebGL', level: 75, icon: '■' },
-        { name: 'Redux / Zustand', level: 88, icon: '◇' },
-      ],
-    },
     backend: {
       title: 'BACKEND',
       skills: [
-        { name: 'Node.js / Express', level: 85, icon: '▼' },
-        { name: 'MongoDB / PostgreSQL', level: 80, icon: '◆' },
-        { name: 'REST / GraphQL APIs', level: 88, icon: '⚡' },
-        { name: 'Firebase / Supabase', level: 82, icon: '●' },
-        { name: 'Docker / CI/CD', level: 70, icon: '■' },
+        { name: 'Node.js', level: 90, icon: '▲' },
+        { name: 'Express.js', level: 88, icon: '◆' },
+        { name: 'MongoDB', level: 85, icon: '●' },
+        { name: 'MySQL', level: 78, icon: '■' },
+        { name: 'TypeScript', level: 82, icon: '◇' },
+        { name: 'Redis', level: 75, icon: '⚡' },
+        { name: 'Python', level: 70, icon: '▼' },
       ],
     },
-    tools: {
-      title: 'TOOLS & OTHERS',
+
+    frontend: {
+      title: 'FRONTEND',
       skills: [
-        { name: 'Git / GitHub', level: 93, icon: '◇' },
-        { name: 'Figma / Adobe XD', level: 88, icon: '▲' },
-        { name: 'VS Code / Vim', level: 90, icon: '◆' },
-        { name: 'Testing (Jest/Cypress)', level: 78, icon: '●' },
-        { name: 'Performance Optimization', level: 85, icon: '⚡' },
+        { name: 'React.js', level: 78, icon: '⚛' },
+        { name: 'JavaScript (ES6+)', level: 85, icon: '◆' },
+        { name: 'TypeScript', level: 80, icon: '▲' },
+        { name: 'HTML', level: 90, icon: '●' },
+        { name: 'CSS', level: 85, icon: '■' },
+        { name: 'Tailwind CSS', level: 82, icon: '◇' },
+        { name: 'Framer Motion', level: 70, icon: '⚡' },
+      ],
+    },
+
+    tools: {
+      title: 'TOOLS',
+      skills: [
+        { name: 'Git', level: 88, icon: '◆' },
+        { name: 'GitHub', level: 85, icon: '▲' },
+        { name: 'VS Code', level: 92, icon: '●' },
+        { name: 'Linux', level: 80, icon: '■' },
+        { name: 'Postman', level: 85, icon: '◇' },
       ],
     },
   };
 
-  const certifications = [
-    { name: 'AWS Certified Developer', year: '2024' },
-    { name: 'React Advanced Patterns', year: '2023' },
-    { name: 'Web Performance Expert', year: '2023' },
-  ];
+
+  // const certifications = [
+  //   { name: 'AWS Certified Developer', year: '2024' },
+  //   { name: 'React Advanced Patterns', year: '2023' },
+  //   { name: 'Web Performance Expert', year: '2023' },
+  // ];
 
   return (
     <section id="skills" className="skills-section">
@@ -98,40 +104,40 @@ export default function Skills() {
           <div className="skills-stats">
             <div className="stat-box" style={{ '--stat-index': 0 }}>
               <div className="stat-icon">◆</div>
-              <div className="stat-value">15+</div>
-              <div className="stat-label">Technologies</div>
+              <div className="stat-value">20+</div>
+              <div className="stat-label">Technologies Used</div>
             </div>
             <div className="stat-box" style={{ '--stat-index': 1 }}>
               <div className="stat-icon">▲</div>
-              <div className="stat-value">5</div>
-              <div className="stat-label">Years Coding</div>
+              <div className="stat-value">3+</div>
+              <div className="stat-label">Years Experience</div>
             </div>
             <div className="stat-box" style={{ '--stat-index': 2 }}>
               <div className="stat-icon">●</div>
-              <div className="stat-value">100%</div>
-              <div className="stat-label">Dedication</div>
+              <div className="stat-value">Backend</div>
+              <div className="stat-label">Primary Focus</div>
             </div>
           </div>
         </div>
 
-        <div className="certifications">
-          <h3 className="certifications-title">CERTIFICATIONS</h3>
-          <div className="certifications-list">
-            {certifications.map((cert, index) => (
-              <div
-                key={index}
-                className="cert-item"
-                style={{ '--cert-index': index }}
-              >
-                <div className="cert-line"></div>
-                <div className="cert-content">
-                  <span className="cert-name">{cert.name}</span>
-                  <span className="cert-year">{cert.year}</span>
-                </div>
-              </div>
-            ))}
+        <h3 className="certifications-title">CURRENT FOCUS</h3>
+
+        <div className="certifications-list">
+          <div className="cert-item">
+            <div className="cert-content">
+              <span className="cert-name">Advanced Backend Architecture</span>
+              <span className="cert-year">2025</span>
+            </div>
+          </div>
+
+          <div className="cert-item">
+            <div className="cert-content">
+              <span className="cert-name">Authentication & API Security</span>
+              <span className="cert-year">Ongoing</span>
+            </div>
           </div>
         </div>
+
       </div>
     </section>
   );

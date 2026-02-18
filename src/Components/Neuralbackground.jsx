@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 
-export default function NeuralBackground({
+export default function Neuralbackground({
   color = "#00ff88",
   trailOpacity = 0.12,
   particleCount = 800,
