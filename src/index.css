@@ -1253,6 +1253,10 @@ section {
   background: #00ff88;
 }
 
+body:has(.project-modal-backdrop) .navigation {
+  display: none;
+}
+
 /* ==================== MODAL IMAGE GALLERY ==================== */
 .modal-gallery {
   padding: 0 2.5rem;
