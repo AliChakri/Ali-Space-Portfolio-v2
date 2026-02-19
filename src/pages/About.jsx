@@ -101,7 +101,7 @@ export default function About() {
             <div className="image-container">
               <div className="image-frame">
                 <img 
-                  src="public/profile-pic.jpg" 
+                  src="/assets/profile-pic.jpg" 
                   alt="Profile" 
                   className="profile-image"
                 />

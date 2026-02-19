@@ -14,15 +14,15 @@ export default function Projects() {
       status: 'Production-Ready',
       year: '2024',
       cover: 'gradient-1',
-      thumbnail: 'public/ecom-pic1.png', // ADD THIS
+      thumbnail: '/assets/ecom-pic1.png', // ADD THIS
       images: [
-        'public/ecom-pic1.png',
-        'public/ecom-pic2.png',
-        'public/ecom-pic3.png',
-        'public/ecom-pic4.png',
-        'public/ecom-pic5.png',
-        'public/ecom-pic6.png',
-        'public/panel-pic1.png',
+        '/assets/ecom-pic1.png',
+        '/assets/ecom-pic2.png',
+        '/assets/ecom-pic3.png',
+        '/assets/ecom-pic4.png',
+        '/assets/ecom-pic5.png',
+        '/assets/ecom-pic6.png',
+        '/assets/panel-pic1.png',
       ],
       shortDescription:
         'Full-featured e-commerce platform with secure authentication, payments, and an advanced admin dashboard.',
@@ -59,13 +59,13 @@ export default function Projects() {
       status: 'Academic – First Place',
       year: '2024',
       cover: 'gradient-2',
-      thumbnail: 'public/agenda-pic1.png', // ADD THIS
+      thumbnail: '/assets/agenda-pic1.png', // ADD THIS
       images: [
-        'public/agenda-pic1.png',
-        'public/agenda-pic2.png',
-        'public/agenda-pic3.png',
-        'public/agenda-pic4.png',
-        'public/agenda-pic5.png',
+        '/assets/agenda-pic1.png',
+        '/assets/agenda-pic2.png',
+        '/assets/agenda-pic3.png',
+        '/assets/agenda-pic4.png',
+        '/assets/agenda-pic5.png',
       ],
       shortDescription:
         'Backend-focused task manager optimized for performance using low-level system concepts.',
@@ -91,13 +91,13 @@ export default function Projects() {
       status: 'Completed',
       year: '2023',
       cover: 'gradient-3',
-      thumbnail: 'public/neural-pic1.png', // ADD THIS
+      thumbnail: '/assets/neural-pic1.png', // ADD THIS
       images: [
-        'public/neural-pic1.png',
-        'public/neural-pic2.png',
-        'public/neural-pic3.png',
-        'public/neural-pic4.png',
-        'public/neural-pic5.png',
+        '/assets/neural-pic1.png',
+        '/assets/neural-pic2.png',
+        '/assets/neural-pic3.png',
+        '/assets/neural-pic4.png',
+        '/assets/neural-pic5.png',
       ],
       shortDescription:
         'Modern landing page designed for an AI / neural network product.',
@@ -122,12 +122,12 @@ export default function Projects() {
       status: 'Archived',
       year: '2023',
       cover: 'gradient-4',
-      thumbnail: 'public/portfolio-pic1.png', // ADD THIS
+      thumbnail: '/assets/portfolio-pic1.png', // ADD THIS
       images: [
-        'public/portfolio-pic1.png',
-        'public/portfolio-pic2.png',
-        'public/portfolio-pic3.png',
-        'public/portfolio-pic4.png',
+        '/assets/portfolio-pic1.png',
+        '/assets/portfolio-pic2.png',
+        '/assets/portfolio-pic3.png',
+        '/assets/portfolio-pic4.png',
       ],
       shortDescription:
         'First version of my personal portfolio with a NASA-inspired theme.',
@@ -151,13 +151,13 @@ export default function Projects() {
       status: 'Production-Grade',
       year: '2025',
       cover: 'gradient-5',
-      thumbnail: 'public/auth-pic1.png', // ADD THIS
+      thumbnail: '/assets/auth-pic1.png', // ADD THIS
       images: [
-        'public/auth-pic1.png',
-        'public/auth-pic2.png',
-        'public/auth-pic3.png',
-        'public/auth-pic4.png',
-        'public/auth-pic5.png',
+        '/assets/auth-pic1.png',
+        '/assets/auth-pic2.png',
+        '/assets/auth-pic3.png',
+        '/assets/auth-pic4.png',
+        '/assets/auth-pic5.png',
       ],
       shortDescription:
         'Highly secure authentication and authorization system designed with security-first principles.',
