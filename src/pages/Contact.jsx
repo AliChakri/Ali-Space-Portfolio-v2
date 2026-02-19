@@ -141,10 +141,10 @@ export default function Contact() {
   };
 
   const socialLinks = [
-    { name: 'GitHub', url: '#', icon: '→' },
+    { name: 'GitHub', url: 'https://github.com/AliChakri', icon: '→' },
     { name: 'LinkedIn', url: '#', icon: '→' },
-    { name: 'Twitter', url: '#', icon: '→' },
-    { name: 'Dribbble', url: '#', icon: '→' },
+    { name: 'Twitter X', url: '#', icon: '→' },
+    { name: 'Instagram', url: '#', icon: '→' },
   ];
 
   const contactInfo = [

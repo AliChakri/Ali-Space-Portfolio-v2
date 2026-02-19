@@ -104,12 +104,12 @@ export default function Skills() {
           <div className="skills-stats">
             <div className="stat-box" style={{ '--stat-index': 0 }}>
               <div className="stat-icon">◆</div>
-              <div className="stat-value">20+</div>
+              <div className="stat-value">17+</div>
               <div className="stat-label">Technologies Used</div>
             </div>
             <div className="stat-box" style={{ '--stat-index': 1 }}>
               <div className="stat-icon">▲</div>
-              <div className="stat-value">3+</div>
+              <div className="stat-value">2+</div>
               <div className="stat-label">Years Experience</div>
             </div>
             <div className="stat-box" style={{ '--stat-index': 2 }}>

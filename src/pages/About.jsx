@@ -85,7 +85,7 @@ export default function About() {
             </h3>
 
             <p className="intro-paragraph">
-              I’m a computer science student with over 3 years of hands-on experience
+              I'm a computer science student with over 3 years of hands-on experience
               building full-stack web applications using the MERN stack (MongoDB,
               Express, React, and Node.js).
             </p>
@@ -98,21 +98,20 @@ export default function About() {
           </div>
 
           <div className="intro-image">
-            <div className="image-placeholder">
+            <div className="image-container">
               <div className="image-frame">
-                <svg viewBox="0 0 200 200" className="profile-svg">
-                  <defs>
-                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" style={{ stopColor: '#00ff88', stopOpacity: 0.8 }} />
-                      <stop offset="100%" style={{ stopColor: '#0088ff', stopOpacity: 0.8 }} />
-                    </linearGradient>
-                  </defs>
-                  <circle cx="100" cy="100" r="80" fill="url(#grad1)" />
-                  <circle cx="100" cy="100" r="60" fill="rgba(0,0,0,0.3)" />
-                  <circle cx="100" cy="100" r="40" fill="url(#grad1)" />
-                </svg>
+                <img 
+                  src="/src/assets/profile-pic.jpg" 
+                  alt="Profile" 
+                  className="profile-image"
+                />
+                <div className="image-border"></div>
               </div>
-              <div className="image-label">ALGERIA • MERN STACK</div>
+              <div className="image-label">
+                <span className="label-location">ALGERIA</span>
+                <span className="label-separator">•</span>
+                <span className="label-stack">MERN STACK</span>
+              </div>
             </div>
           </div>
         </div>
